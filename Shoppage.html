@@ -1,0 +1,744 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./tab logo.jpg">
+    <title>ShopPage</title>
+    <style>
+        * {
+            margin: 0;
+            padding: o;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        .header2 {
+            width: 100%;
+            height: 100vh;
+            /* border: 1px solid red; */
+            background-color: black;
+            position: relative;
+        }
+
+        .mainvideo {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            position: relative;
+            padding: 1px;
+            /* top: 0;
+            pa
+            left: 0; */
+        }
+
+        .menubar {
+            width: 100%;
+            height: 50px;
+            /* border: 1px solid blue; */
+            background-color: rgba(20, 19, 19, 0.941);
+            position: absolute;
+            top: 0px;
+            left: 0px;
+        }
+
+        .logo {
+            width: 150px;
+            height: 100%;
+            /* border: 1px solid green; */
+            position: relative;
+            left: 50px;
+            display: inline-block;
+            vertical-align: top;
+
+        }
+
+        #textlogo {
+            width: 100%;
+            height: 100%;
+            /* border: 1px solid gray; */
+            color: white;
+            filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(305deg) brightness(103%) contrast(103%);
+            position: absolute;
+
+
+        }
+
+        .shop1 {
+            width: 50px;
+            height: 15px;
+            /* border-left: 1px solid white; */
+            margin-top: 15px;
+            margin-left: 70px;
+            display: inline-block;
+            vertical-align: top;
+
+        }
+
+        .shop1 h4 {
+            color: white;
+            margin-left: 20px;
+        }
+
+        .shopitem {
+            width: 550px;
+            height: 100%;
+            /* border: 1px solid white; */
+            display: inline-block;
+            vertical-align: top;
+            /* margin-top: 15px; */
+            text-align: left;
+            margin-left: 100px;
+
+        }
+
+        .shopitem ul li {
+            display: inline-block;
+            vertical-align: top;
+            color: gray;
+            list-style: none;
+            margin-left: 30px;
+            margin-top: 15px;
+            /* text-align: left; */
+        }
+
+        .icon {
+            width: 180px;
+            height: 100%;
+            /* border: 1px solid red; */
+            display: inline-block;
+            vertical-align: top;
+            color: gray;
+            margin-left: 150px;
+        }
+
+        .search,
+        .mall,
+        .menu2 {
+            display: inline-block;
+            vertical-align: top;
+            margin-top: 15px;
+            margin-left: 20px;
+
+        }
+
+        .mainlogo {
+            width: 600px;
+            height: 200px;
+            /* border: 1px solid black; */
+            position: absolute;
+            left: 350px;
+            top: 200px;
+
+
+        }
+
+        .logtruck {
+            width: 100%;
+            height: 100%;
+
+        }
+
+        .shopnow3 {
+            width: 300px;
+            height: 40px;
+            margin-left: 500px;
+            margin-top: 350px;
+
+
+        }
+
+
+        /* ////////////////////////////best sale////////////////// */
+        .bestsale {
+            width: 100%;
+            height: 100vh;
+            background-color: black;
+            padding: 1px;
+            /* border: 1px solid blue; */
+        }
+
+        .best {
+            width: 250px;
+            height: 55px;
+            /* border: 1px solid lightblue; */
+            margin-top: 20px;
+            margin-left: 30px;
+        }
+
+        .best p {
+            color: white;
+            font-size: 40px;
+        }
+
+        .itempic {
+            width: 95%;
+            height: 70%;
+            /* border: 1px solid green; */
+            margin-left: 30px;
+            margin-top: 20px;
+            overflow: hidden;
+        }
+        .allpicitem{
+            width: 167%;
+            height: 90%;
+            /* border: 1px solid red; */
+            
+
+
+        }
+
+        .interior {
+            width: 420px;
+            height: 80%;
+            display: inline-block;
+            vertical-align: top;
+            /* border: 1px solid red; */
+            margin-left: 5px;
+            margin-top: 5px;
+        }
+
+        .intertext {
+            width: 420px;
+            height: 80px;
+            /* border: 1px solid white; */
+            color: gray;
+            font-size: 26px;
+        }
+
+        .consoletray {
+            width: 420px;
+            height: 80%;
+            display: inline-block;
+            vertical-align: top;
+            margin-top: 5px;
+            /* border: 1px solid red; */
+        }
+
+        .consoletext {
+            width: 420px;
+            height: 80px;
+            /* border: 1px solid white; */
+            color: gray;
+            font-size: 26px;
+        }
+
+
+        .connector {
+            width: 420px;
+            height: 80%;
+            display: inline-block;
+            vertical-align: top;
+            margin-top: 5px;
+            /* border: 1px solid red; */
+        }
+
+        .connecttext {
+            width: 420px;
+            height: 80px;
+            /* border: 1px solid white; */
+            color: gray;
+            font-size: 26px;
+        }
+
+        .inter1,
+        .console1,
+        .connect1,
+        .carkey,
+        .airfilter {
+            width: 100%;
+            height: 100%;
+            border: 1px solid greenyellow;
+        }
+        .key {
+            width: 420px;
+            height: 80%;
+            display: inline-block;
+            vertical-align: top;
+            margin-top: 5px;
+            /* border: 1px solid red; */
+        }
+
+        .keytext {
+            width: 420px;
+            height: 80px;
+            /* border: 1px solid white; */
+            color: gray;
+            font-size: 26px;
+        }
+        .filter {
+            width: 420px;
+            height: 80%;
+            display: inline-block;
+            vertical-align: top;
+            margin-top: 5px;
+            /* border: 1px solid red; */
+        }
+
+        .filtertext {
+            width: 420px;
+            height: 80px;
+            /* border: 1px solid white; */
+            color: gray;
+            font-size: 26px;
+        }
+
+        .cybertruck {
+            width: 100%;
+            height: 100vh;
+            /* border: 1px solid greenyellow; */
+            background-image: url(./cybertruck.jpg);
+            background-position: center;
+            background-size: cover;
+            object-fit: cover;
+            padding: 1px;
+
+        }
+
+        .texttruck {
+            width: 150px;
+            height: 60px;
+            /* border: 1px solid blue; */
+            color: white;
+            text-align: center;
+            margin: auto;
+            margin-top: 400px;
+        }
+
+        .texttruck p {
+            font-size: 25px;
+        }
+
+        .shopnow {
+            width: 180px;
+            height: 30px;
+            background-color: rgba(128, 128, 128, 0.326);
+            margin-left: 580px;
+            margin-top: 20px;
+            color: white;
+        }
+
+        /* /////////////////////////////////////////////////////// */
+        .allmodelcar {
+            width: 100%;
+            height: 472vh;
+            /* border: 1px solid red; */
+            background-color: black;
+            padding: 1px;
+        }
+
+        .model-s-acc {
+            width: 95%;
+            height: 95vh;
+            /* border: 1px solid gold; */
+            background-color: black;
+            background-image: url(./MS_web.jpg);
+            background-position: center;
+            background-size: cover;
+            object-fit: cover;
+            margin-top: 30px;
+            margin-left: 25px;
+            /* padding: 1px; */
+        }
+
+        .s-acc {
+            width: 95%;
+            height: 70PX;
+            /* border: 1PX solid white; */
+            margin-left: 25px;
+            margin-top: 20px;
+        }
+
+        .s-acc h1 {
+            color: white;
+            font-size: 30px;
+            display: inline-block;
+            vertical-align: top;
+            margin-top: 15px;
+            padding: 1px;
+        }
+
+        .s-acc p {
+            border-left-color: gray;
+            color: gray;
+            font-size: 30px;
+            display: inline-block;
+            vertical-align: top;
+            margin-top: 15px;
+        }
+
+        .shop4 {
+            width: 300px;
+            height: 50px;
+            color: white;
+            border: 1px solid gray;
+            background-color: black;
+            display: inline-block;
+            vertical-align: top;
+            margin-top: 10px;
+            margin-left: 650px;
+
+        }
+
+        .model-3-acc {
+            width: 95%;
+            height: 100vh;
+            /* border: 1px solid gold; */
+            background-image: url(./M3H_desktop-2800x1300.jpg);
+            background-position: center;
+            background-size: cover;
+            object-fit: cover;
+            margin-left: 25px;
+            margin-top: 25px;
+            /* padding: 1px; */
+        }
+
+        .model-x-acc {
+            width: 95%;
+            height: 100vh;
+            /* border: 1px solid gold; */
+            background-image: url(./MX_web.jpg);
+            background-position: center;
+            background-size: cover;
+            object-fit: cover;
+            margin-top: 25px;
+            margin-left: 25px;
+        }
+
+        .model-y-acc {
+            width: 95%;
+            height: 100vh;
+            /* border: 1px solid gold; */
+            background-image: url(./MY_web.jpg);
+            background-position: center;
+            background-size: cover;
+            object-fit: cover;
+            margin-top: 25px;
+            margin-left: 25px;
+        }
+
+        .truck-acc {
+            width: 100%;
+            height: 100vh;
+            /* border: 1px solid gold; */
+            background-image: url(./chargtruck.jpg);
+            background-position: center;
+            background-size: cover;
+            object-fit: cover;
+            padding: 1PX;
+            margin-top: 25px;
+        }
+
+        .truck-acc p {
+            font-size: 35px;
+            color: white;
+            margin-left: 550px;
+            margin-top: 300px;
+        }
+
+        .shoptruck {
+            width: 200px;
+            height: 30px;
+            margin-left: 550px;
+
+        }
+
+        /* ========================================== */
+
+
+        .fashion {
+            width: 100%;
+            height: 90vh;
+            /* border: 1px solid green; */
+            background-color: black;
+            margin-top: 500PX;
+        }
+
+        .fashion1 {
+            width: 97%;
+            height: 60vh;
+            /* border: 1px solid green; */
+            background-color: black;
+            margin-left: 20px;
+            margin-top: 20px;
+            padding: 1px;
+        }
+
+        .manfashion {
+            width: 420px;
+            height: 95%;
+            /* border: 1px solid goldenrod; */
+            display: inline-block;
+            vertical-align: top;
+            margin-top: 10px;
+            margin-left: 10px;
+        }
+
+        .man {
+            width: 100%;
+            height: 100%;
+        }
+
+        .manshirt {
+            color: white;
+            font-size: 30px;
+            margin-top: 15px;
+        }
+
+        .manshirt p {
+            color: gray;
+        }
+
+        .manshop {
+            width: 200px;
+            height: 30px;
+            border: 1px solid gray;
+            background-color: black;
+            color: gray;
+
+        }
+
+        .ladyfashion {
+            width: 420px;
+            height: 95%;
+            /* border: 1px solid goldenrod; */
+            display: inline-block;
+            vertical-align: top;
+            margin-top: 10px;
+            margin-left: 10px;
+        }
+
+        .lady {
+            width: 100%;
+            height: 100%;
+        }
+
+        .kidsfashion {
+            width: 420px;
+            height: 95%;
+            /* border: 1px solid goldenrod; */
+            display: inline-block;
+            vertical-align: top;
+            margin-top: 10px;
+            margin-left: 10px;
+        }
+
+        .kids {
+            width: 100%;
+            height: 100%;
+        }
+
+        /* ////////////////////////////////////////////// */
+        .lifestyle1 {
+            width: 100%;
+            height: 100vh;
+            /* border: 1px solid red; */
+            background-image: url(./life.jpg);
+            background-position: center;
+            background-size: cover;
+            object-fit: cover;
+            padding: 1px;
+
+        }
+
+        .textlife {
+            width: 150px;
+            height: 50px;
+            color: white;
+            /* border: 1px solid white; */
+            margin: auto;
+            margin-top: 500px;
+        }
+
+        .textlife p {
+            font-size: 30px;
+        }
+
+        .lastline {
+            background-color: black;
+            color: gray;
+        }
+
+        .lastline ul li {
+            list-style: none;
+            display: inline-block;
+            margin-left: 10px;
+        }
+
+        .lastline ul {
+            margin-left: 450px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="header2">
+        <video class="mainvideo" src="./main-videomir_desktop.mp4" autoplay loop muted=""></video>
+    </div>
+    <div class="menubar">
+        <div class="logo">
+            <img id="textlogo" src="./tesla1-removebg-preview.png" alt="">
+        </div>
+        <div class="shop1">
+            <h4>SHOP</h4>
+        </div>
+        <div class="shopitem">
+            <ul>
+                <li>CHARGING</li>
+                <li>VEHICLE ACCESSORIES</li>
+                <li>APPAREL</li>
+                <li>LIFESTYLE</li>
+            </ul>
+        </div>
+        <div class="icon">
+            <i class="fa-solid fa-magnifying-glass search"></i>
+            <i class="fa-solid fa-cart-shopping mall"></i>
+            <div class="menu2">MENU</div>
+        </div>
+        <div class="mainlogo">
+            <img class="logtruck" src="./cybergraffity_desktop.png" alt="">
+        </div>
+        <button class="shopnow3">SHOP NOW</button>
+    </div>
+    <!-- //////////////////////seller////////////////// -->
+    <div class="bestsale">
+        <div class="best">
+            <p>BEST SALLERS</p>
+        </div>
+        <div class="itempic">
+            <div class="allpicitem">
+                <div class="interior">
+                    <img class="inter1" src="./1448751-00-B_0_2000.jpg" alt="">
+                    <div class="intertext">
+                        <p>2017-2023 MODEL 3 ALL-WEATHER
+                            <br>INTERIOR LINERS
+                        </p>
+                    </div>
+                </div>
+                <div class="consoletray">
+                    <img class="console1" src="./1634268-00-A_0_2000.jpg" alt="">
+                    <div class="consoletext">
+                        <p>MODEL Y AND 2017-2023 MODEL 3
+                            <br> CENTER CANSOLE TRAYS
+                        </p>
+                    </div>
+                </div>
+                <div class="connector">
+                    <img class="connect1" src="./1734412-02-D_01_2000.jpeg" alt="">
+                    <div class="connecttext">
+                        <p>UNIVERSAL WALL CONNECTOR</p>
+                    </div>
+                </div>
+                <div class="key">
+                    <img class="carkey" src="./1449859-00-D_0_2000.jpg" alt="">
+                    <div class="keytext">
+                        <p>MODEL 3/Y KEY FOB</p>
+                    </div>
+                </div>
+                <div class="filter">
+                    <img class="airfilter" src="./1107681-00-A_0_2000.jpg" alt="">
+                    <div class="filertext">
+                        <p>MODEL 3/Y AIR FILTER</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="cybertruck">
+        <div class="texttruck">
+            <p>CYBERTRUCK</p>
+            <P2>ACCESSORIES</P2>
+        </div>
+        <button class="shopnow">SHOP NOW</button>
+    </div>
+    <div class="allmodelcar">
+        <div class="model-s-acc">
+        </div>
+        <div class="s-acc">
+            <h1>MODEL S</h1>
+            <p>ACCESSORIES</p>
+            <button class="shop4">SHOP NOW </button>
+        </div>
+        <div class="model-3-acc">
+
+        </div>
+        <div class="s-acc">
+            <h1>MODEL 3</h1>
+            <p>ACCESSORIES</p>
+            <button class="shop4">SHOP NOW </button>
+        </div>
+        <div class="model-x-acc">
+
+        </div>
+        <div class="s-acc">
+            <h1>MODEL X</h1>
+            <p>ACCESSORIES</p>
+            <button class="shop4">SHOP NOW </button>
+        </div>
+        <div class="model-y-acc">
+
+        </div>
+        <div class="s-acc">
+            <h1>MODEL Y</h1>
+            <p>ACCESSORIES</p>
+            <button class="shop4">SHOP NOW </button>
+        </div>
+        <div class="truck-acc">
+            <p>CHARGING</p>
+            <button class="shoptruck">SHOP NOW </button>
+        </div>
+    </div>
+
+    <!-- /////////////fashion//////////// -->
+
+    <div class="fashion">
+        <div class="fashion1">
+            <div class="manfashion">
+                <img class="man" src="./faf200f05dde1_men_web.jpg" alt="">
+                <div class="manshirt">
+                    <h4>MEN'S</h4>
+                    <p>APPAREL</p>
+                    <button class="manshop">SHOP NOW </button>
+                </div>
+            </div>
+            <div class="ladyfashion">
+                <img class="lady" src="./faf200f05dde1_women_web.jpg" alt="">
+                <div class="manshirt">
+                    <h4>WOMEN'S</h4>
+                    <p>APPAREL</p>
+                    <button class="manshop">SHOP NOW </button>
+                </div>
+            </div>
+            <div class="kidsfashion">
+                <img class="kids" src="./faf200f05dde1_kids_web.jpg" alt="">
+                <div class="manshirt">
+                    <h4>KID'S</h4>
+                    <p>APPAREL</p>
+                    <button class="manshop">SHOP NOW </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="lifestyle1">
+        <div class="textlife">
+            <p>LIFESTYLE</p>
+        </div>
+        <button class="shopnow">SHOP NOW</button>
+    </div>
+    <div class="lastline">
+        <ul>
+            <li>TESLA @ 2024</li>
+            <li>PRIVACY & LEGAL</li>
+            <li>LOCATIONS</li>
+
+        </ul>
+
+
+    </div>
+</body>
+
+</html>
